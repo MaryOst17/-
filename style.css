@@ -1,0 +1,86 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #24644A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+h1, p, .title {
+    color: #F7EAD5;
+    text-align: center;
+    width: 80%;
+}
+
+form {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2C934E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#canvas-container {
+    position: relative;
+    width: 600px;
+    height: 547px;
+}
+
+#logo-canvas, #image-upload-canvas, #text-canvas, #text-canvas-bottom {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#logo-canvas {
+    z-index: 10;
+    text-align: center;
+}
+
+#image-upload-canvas {
+    z-index: 5;
+}
+
+#text-canvas, #text-canvas-bottom {
+    z-index: 25;
+}
+
+#result {
+    display: none;
+}
+
+#download {
+    display: inline-block;
+}
+
+.instructions {
+    text-align: center;
+    color: #F7EAD5;
+    width: 80%;
+}

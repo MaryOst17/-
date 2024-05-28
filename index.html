@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-флэшмоб "Детская улыбка"</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <h1>Онлайн-флэшмоб "Детская улыбка"</h1>
+        <p>Приуроченный ко Дню защиты детей</p>
+    </div>
+    <form id="upload-form">
+        <h1>1. Сначала загрузите фотографию</h1>
+        <div class="instructions">
+            <span>Минимальная ширина: 600px.<br>Рекомендуем загружать большие фотографии хорошего качества!</span>
+        </div>
+        <input id="image" type="file" accept="image/jpeg,image/png,image/gif" name="file3">
+        <div class="image-upload">
+            <div id="canvas-container">
+                <canvas id="logo-canvas" width="600" height="261"></canvas>
+                <canvas id="image-upload-canvas" width="600" height="547"></canvas>
+                <canvas id="text-canvas" width="600" height="399"></canvas>
+                <canvas id="text-canvas-bottom" width="600" height="100"></canvas>
+            </div>
+        </div>
+
+        <h1>2. Имя участника</h1>
+        <input maxlength="20" type="text" id="top-content" placeholder="Имя">
+        <h1>3. Место проживания</h1>
+        <input maxlength="25" type="text" id="bottom-content" placeholder="Населённый пункт">
+        <br>
+        <a id="download"><h2>Скачать фотографию</h2></a>
+        <br><br><br>
+        <canvas id="result" width="600" height="547"></canvas>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
